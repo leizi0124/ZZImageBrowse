@@ -15,7 +15,7 @@
 		A30DE46A1EF68AB800D28A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */; };
 		A30DE4751EF68AB900D28A0E /* ZZImageBrowseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */; };
 		A30DE4801EF68AB900D28A0E /* ZZImageBrowseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */; };
-		A30DE48F1EF68B4E00D28A0E /* ZZImageBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */; };
+		A30DE4981EF6922C00D28A0E /* ZZImageBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		A30DE47B1EF68AB900D28A0E /* ZZImageBrowseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZImageBrowseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseUITests.m; sourceTree = "<group>"; };
 		A30DE4811EF68AB900D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A30DE48D1EF68B4E00D28A0E /* ZZImageBrowseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImageBrowseView.h; sourceTree = "<group>"; };
-		A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseView.m; sourceTree = "<group>"; };
+		A30DE4961EF6922C00D28A0E /* ZZImageBrowseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImageBrowseView.h; sourceTree = "<group>"; };
+		A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 		A30DE4591EF68AB800D28A0E /* ZZImageBrowse */ = {
 			isa = PBXGroup;
 			children = (
+				A30DE4951EF6920000D28A0E /* ZZImageBrowse */,
 				A30DE45D1EF68AB800D28A0E /* AppDelegate.h */,
 				A30DE45E1EF68AB800D28A0E /* AppDelegate.m */,
 				A30DE4601EF68AB800D28A0E /* ViewController.h */,
@@ -113,8 +114,6 @@
 				A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */,
 				A30DE46B1EF68AB800D28A0E /* Info.plist */,
 				A30DE45A1EF68AB800D28A0E /* Supporting Files */,
-				A30DE48D1EF68B4E00D28A0E /* ZZImageBrowseView.h */,
-				A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */,
 			);
 			path = ZZImageBrowse;
 			sourceTree = "<group>";
@@ -143,6 +142,15 @@
 				A30DE4811EF68AB900D28A0E /* Info.plist */,
 			);
 			path = ZZImageBrowseUITests;
+			sourceTree = "<group>";
+		};
+		A30DE4951EF6920000D28A0E /* ZZImageBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE4961EF6922C00D28A0E /* ZZImageBrowseView.h */,
+				A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */,
+			);
+			path = ZZImageBrowse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +220,7 @@
 				TargetAttributes = {
 					A30DE4561EF68AB800D28A0E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G3A2R774K9;
 						ProvisioningStyle = Automatic;
 					};
 					A30DE46F1EF68AB900D28A0E = {
@@ -280,7 +289,7 @@
 			files = (
 				A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */,
 				A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */,
-				A30DE48F1EF68B4E00D28A0E /* ZZImageBrowseView.m in Sources */,
+				A30DE4981EF6922C00D28A0E /* ZZImageBrowseView.m in Sources */,
 				A30DE45C1EF68AB800D28A0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3A2R774K9;
 				INFOPLIST_FILE = ZZImageBrowse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3A2R774K9;
 				INFOPLIST_FILE = ZZImageBrowse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +526,7 @@
 				A30DE4861EF68AB900D28A0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30DE4871EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				A30DE4891EF68AB900D28A0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30DE48A1EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +544,7 @@
 				A30DE48C1EF68AB900D28A0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

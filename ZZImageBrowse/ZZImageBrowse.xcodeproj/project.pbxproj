@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30DE45C1EF68AB800D28A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE45B1EF68AB800D28A0E /* main.m */; };
+		A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE45E1EF68AB800D28A0E /* AppDelegate.m */; };
+		A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4611EF68AB800D28A0E /* ViewController.m */; };
+		A30DE4651EF68AB800D28A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DE4631EF68AB800D28A0E /* Main.storyboard */; };
+		A30DE4671EF68AB800D28A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30DE4661EF68AB800D28A0E /* Assets.xcassets */; };
+		A30DE46A1EF68AB800D28A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */; };
+		A30DE4751EF68AB900D28A0E /* ZZImageBrowseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */; };
+		A30DE4801EF68AB900D28A0E /* ZZImageBrowseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30DE4711EF68AB900D28A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DE44F1EF68AB800D28A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30DE4561EF68AB800D28A0E;
+			remoteInfo = ZZImageBrowse;
+		};
+		A30DE47C1EF68AB900D28A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DE44F1EF68AB800D28A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30DE4561EF68AB800D28A0E;
+			remoteInfo = ZZImageBrowse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A30DE4571EF68AB800D28A0E /* ZZImageBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZImageBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30DE45B1EF68AB800D28A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A30DE45D1EF68AB800D28A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A30DE45E1EF68AB800D28A0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A30DE4601EF68AB800D28A0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A30DE4611EF68AB800D28A0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A30DE4641EF68AB800D28A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30DE4661EF68AB800D28A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30DE4691EF68AB800D28A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30DE46B1EF68AB800D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30DE4701EF68AB900D28A0E /* ZZImageBrowseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZImageBrowseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseTests.m; sourceTree = "<group>"; };
+		A30DE4761EF68AB900D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30DE47B1EF68AB900D28A0E /* ZZImageBrowseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZImageBrowseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseUITests.m; sourceTree = "<group>"; };
+		A30DE4811EF68AB900D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30DE4541EF68AB800D28A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE46D1EF68AB900D28A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE4781EF68AB900D28A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30DE44E1EF68AB800D28A0E = {
+			isa = PBXGroup;
+			children = (
+				A30DE4591EF68AB800D28A0E /* ZZImageBrowse */,
+				A30DE4731EF68AB900D28A0E /* ZZImageBrowseTests */,
+				A30DE47E1EF68AB900D28A0E /* ZZImageBrowseUITests */,
+				A30DE4581EF68AB800D28A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A30DE4581EF68AB800D28A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE4571EF68AB800D28A0E /* ZZImageBrowse.app */,
+				A30DE4701EF68AB900D28A0E /* ZZImageBrowseTests.xctest */,
+				A30DE47B1EF68AB900D28A0E /* ZZImageBrowseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30DE4591EF68AB800D28A0E /* ZZImageBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE45D1EF68AB800D28A0E /* AppDelegate.h */,
+				A30DE45E1EF68AB800D28A0E /* AppDelegate.m */,
+				A30DE4601EF68AB800D28A0E /* ViewController.h */,
+				A30DE4611EF68AB800D28A0E /* ViewController.m */,
+				A30DE4631EF68AB800D28A0E /* Main.storyboard */,
+				A30DE4661EF68AB800D28A0E /* Assets.xcassets */,
+				A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */,
+				A30DE46B1EF68AB800D28A0E /* Info.plist */,
+				A30DE45A1EF68AB800D28A0E /* Supporting Files */,
+			);
+			path = ZZImageBrowse;
+			sourceTree = "<group>";
+		};
+		A30DE45A1EF68AB800D28A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE45B1EF68AB800D28A0E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A30DE4731EF68AB900D28A0E /* ZZImageBrowseTests */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */,
+				A30DE4761EF68AB900D28A0E /* Info.plist */,
+			);
+			path = ZZImageBrowseTests;
+			sourceTree = "<group>";
+		};
+		A30DE47E1EF68AB900D28A0E /* ZZImageBrowseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */,
+				A30DE4811EF68AB900D28A0E /* Info.plist */,
+			);
+			path = ZZImageBrowseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30DE4561EF68AB800D28A0E /* ZZImageBrowse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30DE4841EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowse" */;
+			buildPhases = (
+				A30DE4531EF68AB800D28A0E /* Sources */,
+				A30DE4541EF68AB800D28A0E /* Frameworks */,
+				A30DE4551EF68AB800D28A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZImageBrowse;
+			productName = ZZImageBrowse;
+			productReference = A30DE4571EF68AB800D28A0E /* ZZImageBrowse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A30DE46F1EF68AB900D28A0E /* ZZImageBrowseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30DE4871EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseTests" */;
+			buildPhases = (
+				A30DE46C1EF68AB900D28A0E /* Sources */,
+				A30DE46D1EF68AB900D28A0E /* Frameworks */,
+				A30DE46E1EF68AB900D28A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30DE4721EF68AB900D28A0E /* PBXTargetDependency */,
+			);
+			name = ZZImageBrowseTests;
+			productName = ZZImageBrowseTests;
+			productReference = A30DE4701EF68AB900D28A0E /* ZZImageBrowseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A30DE47A1EF68AB900D28A0E /* ZZImageBrowseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30DE48A1EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseUITests" */;
+			buildPhases = (
+				A30DE4771EF68AB900D28A0E /* Sources */,
+				A30DE4781EF68AB900D28A0E /* Frameworks */,
+				A30DE4791EF68AB900D28A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30DE47D1EF68AB900D28A0E /* PBXTargetDependency */,
+			);
+			name = ZZImageBrowseUITests;
+			productName = ZZImageBrowseUITests;
+			productReference = A30DE47B1EF68AB900D28A0E /* ZZImageBrowseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30DE44F1EF68AB800D28A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "赵振磊";
+				TargetAttributes = {
+					A30DE4561EF68AB800D28A0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					A30DE46F1EF68AB900D28A0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A30DE4561EF68AB800D28A0E;
+					};
+					A30DE47A1EF68AB900D28A0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A30DE4561EF68AB800D28A0E;
+					};
+				};
+			};
+			buildConfigurationList = A30DE4521EF68AB800D28A0E /* Build configuration list for PBXProject "ZZImageBrowse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30DE44E1EF68AB800D28A0E;
+			productRefGroup = A30DE4581EF68AB800D28A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30DE4561EF68AB800D28A0E /* ZZImageBrowse */,
+				A30DE46F1EF68AB900D28A0E /* ZZImageBrowseTests */,
+				A30DE47A1EF68AB900D28A0E /* ZZImageBrowseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30DE4551EF68AB800D28A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30DE46A1EF68AB800D28A0E /* LaunchScreen.storyboard in Resources */,
+				A30DE4671EF68AB800D28A0E /* Assets.xcassets in Resources */,
+				A30DE4651EF68AB800D28A0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE46E1EF68AB900D28A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE4791EF68AB900D28A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30DE4531EF68AB800D28A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */,
+				A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */,
+				A30DE45C1EF68AB800D28A0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE46C1EF68AB900D28A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30DE4751EF68AB900D28A0E /* ZZImageBrowseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30DE4771EF68AB900D28A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30DE4801EF68AB900D28A0E /* ZZImageBrowseUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A30DE4721EF68AB900D28A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30DE4561EF68AB800D28A0E /* ZZImageBrowse */;
+			targetProxy = A30DE4711EF68AB900D28A0E /* PBXContainerItemProxy */;
+		};
+		A30DE47D1EF68AB900D28A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30DE4561EF68AB800D28A0E /* ZZImageBrowse */;
+			targetProxy = A30DE47C1EF68AB900D28A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A30DE4631EF68AB800D28A0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30DE4641EF68AB800D28A0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30DE4691EF68AB800D28A0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30DE4821EF68AB900D28A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A30DE4831EF68AB900D28A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A30DE4851EF68AB900D28A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZZImageBrowse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A30DE4861EF68AB900D28A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZZImageBrowse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A30DE4881EF68AB900D28A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZZImageBrowseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZZImageBrowse.app/ZZImageBrowse";
+			};
+			name = Debug;
+		};
+		A30DE4891EF68AB900D28A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZZImageBrowseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZZImageBrowse.app/ZZImageBrowse";
+			};
+			name = Release;
+		};
+		A30DE48B1EF68AB900D28A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZZImageBrowseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZZImageBrowse;
+			};
+			name = Debug;
+		};
+		A30DE48C1EF68AB900D28A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZZImageBrowseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.com.ZZImageBrowseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZZImageBrowse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30DE4521EF68AB800D28A0E /* Build configuration list for PBXProject "ZZImageBrowse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30DE4821EF68AB900D28A0E /* Debug */,
+				A30DE4831EF68AB900D28A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30DE4841EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30DE4851EF68AB900D28A0E /* Debug */,
+				A30DE4861EF68AB900D28A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A30DE4871EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30DE4881EF68AB900D28A0E /* Debug */,
+				A30DE4891EF68AB900D28A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A30DE48A1EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30DE48B1EF68AB900D28A0E /* Debug */,
+				A30DE48C1EF68AB900D28A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30DE44F1EF68AB800D28A0E /* Project object */;
+}

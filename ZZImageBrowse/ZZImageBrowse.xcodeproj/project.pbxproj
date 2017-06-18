@@ -15,6 +15,7 @@
 		A30DE46A1EF68AB800D28A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */; };
 		A30DE4751EF68AB900D28A0E /* ZZImageBrowseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */; };
 		A30DE4801EF68AB900D28A0E /* ZZImageBrowseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */; };
+		A30DE48F1EF68B4E00D28A0E /* ZZImageBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A30DE47B1EF68AB900D28A0E /* ZZImageBrowseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZImageBrowseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseUITests.m; sourceTree = "<group>"; };
 		A30DE4811EF68AB900D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30DE48D1EF68B4E00D28A0E /* ZZImageBrowseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImageBrowseView.h; sourceTree = "<group>"; };
+		A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				A30DE4681EF68AB800D28A0E /* LaunchScreen.storyboard */,
 				A30DE46B1EF68AB800D28A0E /* Info.plist */,
 				A30DE45A1EF68AB800D28A0E /* Supporting Files */,
+				A30DE48D1EF68B4E00D28A0E /* ZZImageBrowseView.h */,
+				A30DE48E1EF68B4E00D28A0E /* ZZImageBrowseView.m */,
 			);
 			path = ZZImageBrowse;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */,
 				A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */,
+				A30DE48F1EF68B4E00D28A0E /* ZZImageBrowseView.m in Sources */,
 				A30DE45C1EF68AB800D28A0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,7 @@
     }
     return self;
 }
+#pragma mark - 初始化
 - (void)viewsInit {
     
     UIImage *defImage = [UIImage imageNamed:@"defaut_img"];
@@ -33,6 +34,7 @@
     showImage = [[UIImageView alloc] initWithFrame:self.contentView.bounds];
     [self.contentView addSubview:showImage];
 }
+#pragma mark - 
 - (void)setImageWith:(NSString *)urlString {
     defautImage.alpha = 1;
     showImage.alpha = 0;

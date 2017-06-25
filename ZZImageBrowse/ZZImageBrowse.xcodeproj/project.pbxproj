@@ -19,6 +19,7 @@
 		A30DE4981EF6922C00D28A0E /* ZZImageBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */; };
 		A34486D11EFFAF5B00035AFE /* defaut_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A34486D01EFFAF5B00035AFE /* defaut_img.png */; };
 		A34486D41EFFAFC400035AFE /* ZZImsgrBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */; };
+		A34486D71EFFBA0500035AFE /* ZZImageBrowsePage.m in Sources */ = {isa = PBXBuildFile; fileRef = A34486D61EFFBA0500035AFE /* ZZImageBrowsePage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		A34486D01EFFAF5B00035AFE /* defaut_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaut_img.png; sourceTree = "<group>"; };
 		A34486D21EFFAFC400035AFE /* ZZImsgrBrowseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImsgrBrowseCell.h; sourceTree = "<group>"; };
 		A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImsgrBrowseCell.m; sourceTree = "<group>"; };
+		A34486D51EFFBA0500035AFE /* ZZImageBrowsePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImageBrowsePage.h; sourceTree = "<group>"; };
+		A34486D61EFFBA0500035AFE /* ZZImageBrowsePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowsePage.m; sourceTree = "<group>"; };
 		B6FA3AF580EC9FBFDAE79BFD /* Pods-ZZImageBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZImageBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZImageBrowse/Pods-ZZImageBrowse.release.xcconfig"; sourceTree = "<group>"; };
 		CDF33366450ED0DDABF33892 /* libPods-ZZImageBrowse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZImageBrowse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,6 +184,8 @@
 				A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */,
 				A34486D21EFFAFC400035AFE /* ZZImsgrBrowseCell.h */,
 				A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */,
+				A34486D51EFFBA0500035AFE /* ZZImageBrowsePage.h */,
+				A34486D61EFFBA0500035AFE /* ZZImageBrowsePage.m */,
 			);
 			path = ZZImageBrowse;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34486D71EFFBA0500035AFE /* ZZImageBrowsePage.m in Sources */,
 				A34486D41EFFAFC400035AFE /* ZZImsgrBrowseCell.m in Sources */,
 				A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */,
 				A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */,

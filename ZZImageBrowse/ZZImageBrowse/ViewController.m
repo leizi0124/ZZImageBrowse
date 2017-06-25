@@ -19,7 +19,7 @@
     ZZImageBrowseView *browse = [[ZZImageBrowseView alloc] initWithFrame:frame];
     [self.view addSubview:browse];
     NSMutableArray *array = [[NSMutableArray alloc] init];
-    for (NSInteger index = 0; index < 20; index++) {
+    for (NSInteger index = 0; index < 8; index++) {
         if (index % 2 == 0) {
             [array addObject:@"http://tvax4.sinaimg.cn/crop.0.0.996.996.1024/005ZwE4Aly8fg00n1bpdoj30ro0roac4.jpg"];
         }else {

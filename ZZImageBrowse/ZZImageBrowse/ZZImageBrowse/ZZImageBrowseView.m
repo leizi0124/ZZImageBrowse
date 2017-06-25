@@ -7,14 +7,23 @@
 //
 
 #import "ZZImageBrowseView.h"
+#import "ZZImsgrBrowseCell.h"
 #define CELLID @"BROWSECELL"
+#define DATACOUNTTIMES 100      //图片数目的倍数
 @interface ZZImageBrowseView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
     UICollectionView *browseView;
     UICollectionViewFlowLayout *browseLayout;
+    NSArray *dataArray;
 }
 @end
 @implementation ZZImageBrowseView
+- (instancetype)initWithFrame:(CGRect)frame dataArray:(NSArray *)dataArray {
+    if (self = [super initWithFrame:frame]) {
+        [self browseViewInit];
+    }
+    return self;
+}
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self browseViewInit];
@@ -23,40 +32,63 @@
 }
 - (void)browseViewInit {
     browseLayout = [[UICollectionViewFlowLayout alloc] init];
-    [self selectStyle:0];
+    [self selectStyle:_style];
     browseView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:browseLayout];
     browseView.delegate = self;
     browseView.dataSource = self;
     browseView.pagingEnabled = YES;
     browseView.showsVerticalScrollIndicator = NO;
     browseView.showsHorizontalScrollIndicator = NO;
-    [browseView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CELLID];
+    [browseView registerClass:[ZZImsgrBrowseCell class] forCellWithReuseIdentifier:CELLID];
     [self addSubview:browseView];
+    
+    if (dataArray.count) {
+        browseView.contentOffset = CGPointMake(dataArray.count * DATACOUNTTIMES / 2 * self.bounds.size.width, 0);
+    }
 }
 - (void)selectStyle:(NSInteger)style {
-    browseLayout.itemSize = self.bounds.size;
-    browseLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    browseLayout.minimumLineSpacing = 0;
-    browseLayout.minimumInteritemSpacing = 0;
+    switch (style) {
+        case kBrowseDefaultStyle:{
+            browseLayout.itemSize = self.bounds.size;
+            browseLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+            browseLayout.minimumLineSpacing = 0;
+            browseLayout.minimumInteritemSpacing = 0;
+        }
+            break;
+//        case kBrowseDefaultStyle:{
+//            
+//        }
+//            break;
+//        case kBrowseDefaultStyle:{
+//            
+//        }
+//            break;
+//        case kBrowseDefaultStyle:{
+//            
+//        }
+//            break;
+        default:
+            break;
+    }
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return dataArray.count * DATACOUNTTIMES;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [browseView dequeueReusableCellWithReuseIdentifier:CELLID forIndexPath:indexPath];
-    UIImageView *showImage = [cell.contentView viewWithTag:100];
     
-    if (showImage == nil) {
-        showImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, browseLayout.itemSize.width, browseLayout.itemSize.height)];
-        [cell.contentView addSubview:showImage];
-    }
-    
-    if (indexPath.row % 2 == 0) {
-        showImage.backgroundColor = [UIColor orangeColor];
-    }else {
-        showImage.backgroundColor = [UIColor redColor];
-    }
-    
+    ZZImsgrBrowseCell *cell = [browseView dequeueReusableCellWithReuseIdentifier:CELLID forIndexPath:indexPath];
+    NSInteger index = indexPath.row % dataArray.count;
+    NSString *urlString = [dataArray objectAtIndex:index];
+    [cell setImageWith:urlString];
     return cell;
+}
+#pragma mark - 赋值并刷新
+- (void)browseViewSetUrlArray:(NSArray *)urlArray {
+    dataArray = urlArray;
+    [browseView reloadData];
+    browseView.contentOffset = CGPointMake(dataArray.count * 50 * self.bounds.size.width, 0);
+}
+- (void)setStyle:(kBrowseStyle)style {
+    _style = style;
 }
 @end

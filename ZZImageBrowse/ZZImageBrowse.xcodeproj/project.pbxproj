@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32C4B642542C871C3E905165 /* libPods-ZZImageBrowse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF33366450ED0DDABF33892 /* libPods-ZZImageBrowse.a */; };
 		A30DE45C1EF68AB800D28A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE45B1EF68AB800D28A0E /* main.m */; };
 		A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE45E1EF68AB800D28A0E /* AppDelegate.m */; };
 		A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4611EF68AB800D28A0E /* ViewController.m */; };
@@ -16,6 +17,8 @@
 		A30DE4751EF68AB900D28A0E /* ZZImageBrowseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4741EF68AB900D28A0E /* ZZImageBrowseTests.m */; };
 		A30DE4801EF68AB900D28A0E /* ZZImageBrowseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE47F1EF68AB900D28A0E /* ZZImageBrowseUITests.m */; };
 		A30DE4981EF6922C00D28A0E /* ZZImageBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */; };
+		A34486D11EFFAF5B00035AFE /* defaut_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A34486D01EFFAF5B00035AFE /* defaut_img.png */; };
+		A34486D41EFFAFC400035AFE /* ZZImsgrBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86DFA6C5776D1D39644899AC /* Pods-ZZImageBrowse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZImageBrowse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZImageBrowse/Pods-ZZImageBrowse.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE4571EF68AB800D28A0E /* ZZImageBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZImageBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DE45B1EF68AB800D28A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A30DE45D1EF68AB800D28A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +58,11 @@
 		A30DE4811EF68AB900D28A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A30DE4961EF6922C00D28A0E /* ZZImageBrowseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImageBrowseView.h; sourceTree = "<group>"; };
 		A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImageBrowseView.m; sourceTree = "<group>"; };
+		A34486D01EFFAF5B00035AFE /* defaut_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaut_img.png; sourceTree = "<group>"; };
+		A34486D21EFFAFC400035AFE /* ZZImsgrBrowseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImsgrBrowseCell.h; sourceTree = "<group>"; };
+		A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImsgrBrowseCell.m; sourceTree = "<group>"; };
+		B6FA3AF580EC9FBFDAE79BFD /* Pods-ZZImageBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZImageBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZImageBrowse/Pods-ZZImageBrowse.release.xcconfig"; sourceTree = "<group>"; };
+		CDF33366450ED0DDABF33892 /* libPods-ZZImageBrowse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZImageBrowse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C4B642542C871C3E905165 /* libPods-ZZImageBrowse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080340B80E348273358E350F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDF33366450ED0DDABF33892 /* libPods-ZZImageBrowse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FA145B6BF0513D708B4C47E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86DFA6C5776D1D39644899AC /* Pods-ZZImageBrowse.debug.xcconfig */,
+				B6FA3AF580EC9FBFDAE79BFD /* Pods-ZZImageBrowse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A30DE44E1EF68AB800D28A0E = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +115,8 @@
 				A30DE4731EF68AB900D28A0E /* ZZImageBrowseTests */,
 				A30DE47E1EF68AB900D28A0E /* ZZImageBrowseUITests */,
 				A30DE4581EF68AB800D28A0E /* Products */,
+				2FA145B6BF0513D708B4C47E /* Pods */,
+				080340B80E348273358E350F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,8 +176,11 @@
 		A30DE4951EF6920000D28A0E /* ZZImageBrowse */ = {
 			isa = PBXGroup;
 			children = (
+				A34486D01EFFAF5B00035AFE /* defaut_img.png */,
 				A30DE4961EF6922C00D28A0E /* ZZImageBrowseView.h */,
 				A30DE4971EF6922C00D28A0E /* ZZImageBrowseView.m */,
+				A34486D21EFFAFC400035AFE /* ZZImsgrBrowseCell.h */,
+				A34486D31EFFAFC400035AFE /* ZZImsgrBrowseCell.m */,
 			);
 			path = ZZImageBrowse;
 			sourceTree = "<group>";
@@ -160,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30DE4841EF68AB900D28A0E /* Build configuration list for PBXNativeTarget "ZZImageBrowse" */;
 			buildPhases = (
+				3F29984B1C2BF5E49185A6DC /* [CP] Check Pods Manifest.lock */,
 				A30DE4531EF68AB800D28A0E /* Sources */,
 				A30DE4541EF68AB800D28A0E /* Frameworks */,
 				A30DE4551EF68AB800D28A0E /* Resources */,
+				1BCE94D69FA5145789E6A3EF /* [CP] Embed Pods Frameworks */,
+				C9412FA924104AA1BA6E023B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +297,7 @@
 			files = (
 				A30DE46A1EF68AB800D28A0E /* LaunchScreen.storyboard in Resources */,
 				A30DE4671EF68AB800D28A0E /* Assets.xcassets in Resources */,
+				A34486D11EFFAF5B00035AFE /* defaut_img.png in Resources */,
 				A30DE4651EF68AB800D28A0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +318,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BCE94D69FA5145789E6A3EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZImageBrowse/Pods-ZZImageBrowse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F29984B1C2BF5E49185A6DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9412FA924104AA1BA6E023B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZImageBrowse/Pods-ZZImageBrowse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A30DE4531EF68AB800D28A0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34486D41EFFAFC400035AFE /* ZZImsgrBrowseCell.m in Sources */,
 				A30DE4621EF68AB800D28A0E /* ViewController.m in Sources */,
 				A30DE45F1EF68AB800D28A0E /* AppDelegate.m in Sources */,
 				A30DE4981EF6922C00D28A0E /* ZZImageBrowseView.m in Sources */,
@@ -437,6 +522,7 @@
 		};
 		A30DE4851EF68AB900D28A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DFA6C5776D1D39644899AC /* Pods-ZZImageBrowse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G3A2R774K9;
@@ -450,6 +536,7 @@
 		};
 		A30DE4861EF68AB900D28A0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6FA3AF580EC9FBFDAE79BFD /* Pods-ZZImageBrowse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G3A2R774K9;

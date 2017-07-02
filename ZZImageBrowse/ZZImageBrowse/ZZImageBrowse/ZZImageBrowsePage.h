@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 typedef NS_OPTIONS(NSInteger, kPageStyle) {
-    kPageDefautStyle = 0,
+    kPageDefautStyle = 0,   //默认圆形
+    kPageSquareStyle,       //方形
 };
 typedef NS_OPTIONS(NSInteger, kPageShowLocation) {
     kPageShowLeft = 0,  //居左
@@ -30,6 +31,10 @@ typedef NS_OPTIONS(NSInteger, kPageShowLocation) {
 @property (nonatomic, strong) UIColor *pageTintColor;
 /** 选中颜色 */
 @property (nonatomic, strong) UIColor *currentPageTintColor;
+/** 是否显示页数 */
+@property (nonatomic, assign) BOOL showNum;
+/** 选中字颜色颜色 */
+@property (nonatomic, strong) UIColor *currentNumTintColor;
 /**
  数据发生变化重绘
  */

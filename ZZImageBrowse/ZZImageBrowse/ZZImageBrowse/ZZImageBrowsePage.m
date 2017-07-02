@@ -18,10 +18,12 @@
         _currentPage = 0;
         oldPage = _currentPage;
         _spacing = 15;
+        _showNum = NO;
         _style = kPageDefautStyle;
         _location = kPageShowCenter;
         _pageTintColor = [UIColor grayColor];
         _currentPageTintColor = [UIColor whiteColor];
+        _currentNumTintColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -75,7 +77,10 @@
             imageView.layer.cornerRadius = imageView.frame.size.width / 2.0;
         }
             break;
-            
+        case kPageSquareStyle:{
+            imageView.layer.masksToBounds = YES;
+            imageView.layer.cornerRadius = imageView.frame.size.width * 0.2;
+        }
         default:
             break;
     }
@@ -98,7 +103,7 @@
     if (currentPage == _currentPage) {
         return;
     }
-    NSLog(@"ZZImageBrowsePage currentPage == %zd",currentPage);
+    
     if (currentPage >= 0 && currentPage < _count) {
         oldPage = _currentPage;
         _currentPage = currentPage;

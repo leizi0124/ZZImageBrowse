@@ -8,7 +8,6 @@
 
 #import "ZZImageBrowseView.h"
 #import "ZZImsgrBrowseCell.h"
-#import "ZZImageBrowsePage.h"
 
 #define CELLID @"BROWSECELL"
 #define DATACOUNTTIMES 100      //图片数目的倍数
@@ -39,7 +38,7 @@
 #pragma mark - 初始化
 - (void)browseViewInit {
     browseLayout = [[UICollectionViewFlowLayout alloc] init];
-    [self selectStyle:_style];
+    [self selectStyle:_browseStyle];
     browseView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:browseLayout];
     browseView.delegate = self;
     browseView.dataSource = self;
@@ -53,11 +52,12 @@
         browseView.contentOffset = CGPointMake(dataArray.count * DATACOUNTTIMES / 2 * self.bounds.size.width, 0);
     }
     
-    //pagecontrol 参数自定义
     CGRect frame = CGRectMake(0, self.frame.size.height - 20, self.frame.size.width, 10);
     page = [[ZZImageBrowsePage alloc] initWithFrame:frame];
     page.count = 5;
+    page.style = _pageStyle;
     [self addSubview:page];
+    page.hidden = !_showPageControl;
 }
 #pragma mark - 样式
 - (void)selectStyle:(NSInteger)style {
@@ -119,4 +119,5 @@
         page.currentPage = index;
     }
 }
+#pragma mark - pagecontrol相关
 @end

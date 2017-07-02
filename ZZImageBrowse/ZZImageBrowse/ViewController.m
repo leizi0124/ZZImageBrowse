@@ -17,6 +17,8 @@
     
     CGRect frame = CGRectMake(0, 100, self.view.frame.size.width, 300);
     ZZImageBrowseView *browse = [[ZZImageBrowseView alloc] initWithFrame:frame];
+    browse.pageStyle = kPageSquareStyle;
+    browse.showPageControl = YES;
     [self.view addSubview:browse];
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (NSInteger index = 0; index < 8; index++) {
